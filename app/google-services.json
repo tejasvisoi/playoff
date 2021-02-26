@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "622298204120",
+    "project_id": "playoff-fec56",
+    "storage_bucket": "playoff-fec56.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622298204120:android:a9e74a9974a910283114ad",
+        "android_client_info": {
+          "package_name": "com.example.playoff"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "622298204120-t26jqg493egcci6c9nlk1n796h7s0nsb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1nRkCI8QkT4XggChxWQgdb8GaQ6Ld79U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "622298204120-t26jqg493egcci6c9nlk1n796h7s0nsb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
