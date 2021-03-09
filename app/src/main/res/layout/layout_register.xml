@@ -33,7 +33,7 @@
             style="@style/modifiedEditText"
             android:inputType="text"
             android:maxLines="1"
-            android:hint="name"/>
+            android:hint="Name"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -45,7 +45,7 @@
             style="@style/modifiedEditText"
             android:inputType="textEmailAddress"
             android:maxLines="1"
-            android:hint="email"/>
+            android:hint="Email"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -57,19 +57,7 @@
             style="@style/modifiedEditText"
             android:inputType="textEmailAddress"
             android:maxLines="1"
-            android:hint="username"/>
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputPassword"
-        style="@style/parent.TextLayout"
-        android:layout_marginTop="@dimen/signup_text_margin_top">
-        <EditText
-            android:id="@+id/editTextPassword"
-            style="@style/modifiedEditText"
-            android:hint="password"
-            android:maxLines="1"
-            android:inputType="textPassword"/>
+            android:hint="Phone Number"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <ImageView
