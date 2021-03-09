@@ -1,126 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".HomeActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">
-
-    <!--welcome message in text view-->
-
-    <!--Button for logout from the app-->
-
-    <ImageView
-        android:id="@+id/image1"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-
-        android:layout_marginTop="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    <TextView
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        style="@style/viewParent"
-        android:text="Register"
-        android:textSize="@dimen/headerTextSize"
-        android:textColor="@color/blackTextColor"
-        android:textStyle="bold" />
-
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/textInputName"
-        style="@style/parent.TextLayout"
-        android:layout_marginTop="@dimen/signup_text_margin_top">
-        <EditText
-            android:id="@+id/editTextName"
-            style="@style/modifiedEditText"
-            android:inputType="text"
-            android:maxLines="1"
-            android:hint="name"/>
-    </android.support.design.widget.TextInputLayout>
-
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/textInputMobile"
-        style="@style/parent.TextLayout"
-        android:layout_marginTop="@dimen/signup_text_margin_top">
-        <EditText
-            android:id="@+id/editTextMobile"
-            style="@style/modifiedEditText"
-            android:inputType="textEmailAddress"
-            android:maxLines="1"
-            android:hint="email"/>
-    </android.support.design.widget.TextInputLayout>
-
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/textInputEmail"
-        style="@style/parent.TextLayout"
-        android:layout_marginTop="@dimen/signup_text_margin_top">
-        <EditText
-            android:id="@+id/editTextEmail"
-            style="@style/modifiedEditText"
-            android:inputType="textEmailAddress"
-            android:maxLines="1"
-            android:hint="username"/>
-    </android.support.design.widget.TextInputLayout>
-
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/textInputPassword"
-        style="@style/parent.TextLayout"
-        android:layout_marginTop="@dimen/signup_text_margin_top">
-        <EditText
-            android:id="@+id/editTextPassword"
-            style="@style/modifiedEditText"
-            android:hint="password"
-            android:maxLines="1"
-            android:inputType="textPassword"/>
-    </android.support.design.widget.TextInputLayout>
-
-
-
-    <EditText
-        android:id="@+id/idheadTV"
-        android:layout_width="wrap_content"
+    android:background="@color/colorLoginPrimaryDark">
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginBottom="48dp"
-        android:padding="10dp"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/email"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image1"
-        app:layout_constraintVertical_bias="1.0" />
+        android:layout_gravity="center">
 
-    <TextView
-        android:id="@+id/email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="128dp"
-        android:padding="10dp"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/next"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        <include layout="@layout/layout_register"/>
 
-    <Button
-        android:id="@+id/next"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/idheadTV"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="188dp"
-        android:text="Logout"
-        android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

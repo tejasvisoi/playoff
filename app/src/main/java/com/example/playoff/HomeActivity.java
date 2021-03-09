@@ -31,7 +31,7 @@ public class HomeActivity extends AppCompatActivity {
         im1=findViewById(R.id.image1);
         t1=findViewById(R.id.email);
         // button for logout and initialing our button.
-        Button next = findViewById(R.id.next);
+        ImageView next = findViewById(R.id.next);
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         if (user != null) {
             // Name, email address, and profile photo Url
